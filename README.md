@@ -1,5 +1,5 @@
 # ALK-5 Machine Learning Repository
-This repository includes data and code for training machine learning regression models on ALK5 IC50 data available on ChEMBL.
+This repository includes data and code for training machine learning regression models on ALK5 inhibition data available on ChEMBL.
 
 ### Data
 Data is available in the /data folder, which contains the ALK-5 IC50 used to train the models.
