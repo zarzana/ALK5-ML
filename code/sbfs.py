@@ -37,7 +37,7 @@ path_x = 'rrelieff_descriptors.csv'
 x_df = pd.read_csv(path_x, index_col='ID')
 x = x_df.values
 
-path_r = 'C:\Users\Zeki\OneDrive\IC_SOCORRO\stuff\python\sfs.csv'
+path_r = 'sbfs.csv'
 
 x = StandardScaler().fit_transform(x)
 
