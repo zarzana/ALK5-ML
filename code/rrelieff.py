@@ -71,7 +71,6 @@ y = pd.read_csv('y.csv', index_col='ID').values
 
 method = RReliefF()
 method.fit(x, y)
-print(method.weights)
 
 data = dict(Descriptor=list(pd.read_csv('unique_descriptors.csv', index_col='ID').columns),
             Values=list(np.ravel(method.weights)))
