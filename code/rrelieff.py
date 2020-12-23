@@ -4,6 +4,8 @@ import pandas as pd
 from tqdm import tqdm
 from sklearn.preprocessing import StandardScaler
 
+np.seterr(divide='ignore')
+
 
 class RReliefF:
 
@@ -41,7 +43,7 @@ class RReliefF:
 
             x_knn, neighbour_index = knn, neighbour_index[1:]
             y_knn = y[neighbour_index]
-            
+
             x_i = x[i, :]
             y_i = y[i]
 
@@ -70,3 +72,9 @@ y = pd.read_csv('y.csv', index_col='ID').values
 method = RReliefF()
 method.fit(x, y)
 print(method.weights)
+
+data = dict(Descriptor=list(pd.read_csv('unique_descriptors.csv', index_col='ID').columns),
+            Values=list(np.ravel(method.weights)))
+
+df = pd.DataFrame.from_dict(data)
+df.to_csv('rrelieff.csv', index=False)
