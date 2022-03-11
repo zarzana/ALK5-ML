@@ -7,5 +7,8 @@ Data is available in the /data folder, which contains the ALK-5 pIC<sub>50</sub>
 ### Code
 The code used for all steps is available in the /code folder, which is divided into each respective step.
 
+### Article
+https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0246126
+
 ## Contributors
 Gabriel Z. Espinoza, Rafaela M. de Angelo, Patrícia R. Oliveira, Kathia M. Honorio
